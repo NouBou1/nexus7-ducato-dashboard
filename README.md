@@ -19,9 +19,11 @@ So the project was less "install an app" and more: get a supportable OS onto obs
 ## What it does
 
 - **Offline navigation** — full map data on device, so routing keeps working with no mobile signal (relevant in a camper, less so in a city).
-- **Live battery monitoring** — the camper's two LiFePO₄ batteries have Bluetooth BMS modules. The tablet pairs with both and reads state of charge, voltage and current, so the electrical system is visible from the driver's seat instead of from a hatch in the floor.
+- **Live battery monitoring** — the camper's two leisure batteries have Bluetooth BMS modules. The tablet pairs with both and reads out the battery state, so the electrical system is visible from the driver's seat instead of from a hatch in the floor.
 - **Media** — internet radio and local music, controlled from a touch UI sized for a moving vehicle.
 - **Appliance behaviour** — powers on by itself when the ignition supplies power, sleeps when it is cut. No power button, no lock screen, no "where did the launcher go".
+
+Each function runs on its own channel: **GPS** for positioning, **Bluetooth** for the battery modules, and Wi-Fi or a phone hotspot only for internet radio and updates. Nothing that matters while driving depends on having a connection.
 
 ## Hardware & software
 
@@ -74,7 +76,6 @@ The counterpart to booting on power is not staying awake forever afterwards. *De
 ## Honest limitations
 
 - **The launcher is a trial.** Agama Car Launcher is paid software and the trial has expired on this install, which is why the screenshot has a "buy now" overlay across it. Either license it or move to an open alternative.
-- **No GPS on the Wi-Fi model.** The Nexus 7 (2012) Wi-Fi has no GNSS receiver. Positioning depends on an external Bluetooth GPS receiver or a tethered phone.
 - **Micro-USB as the power connector** is the weak point of the whole build — it is not a connector designed for permanent vibration. A worn port is the most likely thing to fail first.
 - **These photos are bench shots**, not installation shots. They show the running system, not the finished dashboard mount.
 

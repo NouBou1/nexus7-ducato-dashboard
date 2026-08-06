@@ -19,9 +19,11 @@ Das Projekt war also weniger „App installieren" als: ein wartbares System auf 
 ## Was es kann
 
 - **Offline-Navigation** — Kartenmaterial liegt auf dem Gerät, Routing funktioniert ohne Mobilfunk (im Wohnmobil relevanter als in der Stadt).
-- **Live-Batterieüberwachung** — die beiden LiFePO₄-Bordbatterien haben Bluetooth-BMS-Module. Das Tablet verbindet sich mit beiden und liest Ladezustand, Spannung und Strom aus. Die Bordelektrik ist damit vom Fahrersitz aus sichtbar statt nur über eine Bodenklappe.
+- **Live-Batterieüberwachung** — die beiden Bordbatterien haben Bluetooth-BMS-Module. Das Tablet verbindet sich mit beiden und liest den Batteriezustand aus. Die Bordelektrik ist damit vom Fahrersitz aus sichtbar statt nur über eine Bodenklappe.
 - **Medien** — Internetradio und lokale Musik, bedienbar über eine Oberfläche, die für ein fahrendes Fahrzeug dimensioniert ist.
 - **Verhalten wie ein Festeinbau** — startet selbstständig, sobald die Zündung Strom liefert, und schläft ein, wenn der Strom weg ist. Kein Power-Knopf, kein Sperrbildschirm, kein „wo ist der Launcher hin".
+
+Jede Funktion läuft über ihren eigenen Kanal: **GPS** für die Ortung, **Bluetooth** für die Batteriemodule, und WLAN oder Handy-Hotspot nur für Internetradio und Updates. Nichts, was während der Fahrt zählt, hängt an einer Verbindung.
 
 ## Hardware & Software
 
@@ -74,7 +76,6 @@ Das Gegenstück zum Booten bei Strom ist, danach nicht dauerhaft wach zu bleiben
 ## Ehrliche Einschränkungen
 
 - **Der Launcher ist eine Testversion.** Agama Car Launcher ist kostenpflichtig, und die Testphase ist auf dieser Installation abgelaufen — daher das „Buy now"-Overlay im Screenshot. Entweder lizenzieren oder auf eine offene Alternative wechseln.
-- **Kein GPS im Wi-Fi-Modell.** Das Nexus 7 (2012) Wi-Fi hat keinen GNSS-Empfänger. Die Positionsbestimmung hängt an einem externen Bluetooth-GPS-Empfänger oder einem gekoppelten Smartphone.
 - **Micro-USB als Stromanschluss** ist die Schwachstelle des ganzen Aufbaus — dieser Stecker ist nicht für dauerhafte Vibration gebaut. Ein ausgeleierter Port wird am ehesten zuerst ausfallen.
 - **Die Fotos sind Werkbank-Aufnahmen**, keine Einbaufotos. Sie zeigen das laufende System, nicht die fertige Einbaulösung.
 
